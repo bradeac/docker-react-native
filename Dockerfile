@@ -1,3 +1,5 @@
+# Dockerfile forked from https://hub.docker.com/r/deredy/react-native
+
 FROM library/ubuntu:16.04
 
 # https://github.com/facebook/react-native/blob/8c7b32d5f1da34613628b4b8e0474bc1e185a618/ContainerShip/Dockerfile.android-base
@@ -104,9 +106,11 @@ RUN /opt/tools/android-accept-licenses.sh "$ANDROID_HOME/tools/bin/sdkmanager \
 	tools \
 	\"platform-tools\" \
 	\"build-tools;25.0.3\" \
+	\"build-tools;28.0.3\" \
 	\"platforms;android-23\" \
 	\"platforms;android-25\" \
 	\"platforms;android-26\" \
+	\"platforms;android-28\" \
 	\"extras;android;m2repository\" \
 	\"extras;google;m2repository\" \
 	\"add-ons;addon-google_apis-google-24\" \
